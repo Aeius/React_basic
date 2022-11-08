@@ -8,6 +8,8 @@ import Input from "./pages/Input";
 import Input2 from "./pages/Input2";
 import UserList from "./pages/List";
 
+import Payment from "./pages/Payment";
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +19,8 @@ function App() {
       <Link to="/Counter">Counter</Link> |
       <Link to="/Input">Input</Link> | 
       <Link to="/Input2">Input2</Link> | 
-      <Link to="/List">List</Link>
+      <Link to="/List">List</Link> | 
+      <Link to="/Payment">Payment</Link> | 
       </nav>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -26,6 +29,7 @@ function App() {
         <Route path="/input" element={<Input />}/>
         <Route path="/input2" element={<Input2 />}/>
         <Route path="/List" element={<UserList />}/>
+        <Route path="/Payment" element={<Payment />}/>
       </Routes>
     </div>
   );
